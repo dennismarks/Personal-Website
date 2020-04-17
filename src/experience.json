@@ -1,0 +1,25 @@
+{
+  "positions": [
+    {
+      "title": "Software Developer",
+      "company": "Forma AI",
+      "date": "May 2020 - Present",
+      "info": "Upcoming information..",
+      "tools": "React, JavaScript, Django, Python, d3.js, PostgreSQL"
+    },
+    {
+      "title": "iOS Developer",
+      "company": "Mobile Application Development Lab University of Toronto",
+      "date": "September - March 2020",
+      "info": "Develop and maintain U of T applications and collaborative projects.\n Facilitate social events and workshops on app development. Assist with outreach to students, faculty and staff.",
+      "tools": "Swift, HTML/CSS, SQLite"
+    },
+    {
+      "title": "Programming Teacher",
+      "company": "Cloud Times Global Inc.",
+      "date": "June 2019 - Present",
+      "info": "Deliver instructional programs designed to support individual student needs. Maintain regular communication with parents and update the progress of students. Provide exercises and assignment help.",
+      "tools": "Java, Python, HTML/CSS/JavaScript"
+    }
+  ]
+}
