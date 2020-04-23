@@ -55,9 +55,9 @@ const Title = styled.h1`
 
 export default function Experience() {
   return (
-    <div id="experience">
+    <div>
       <GridContainer>
-        <Title>Experience</Title>
+        <Title id="experience">Experience</Title>
         <div></div>
         <h3>
           Currently on 16 month PEY and will be beginning the 4th year of

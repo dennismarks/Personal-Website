@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
+
 import styled from "styled-components/macro";
 import withReveal from "react-reveal/withReveal";
 import Fade from "react-reveal/Fade";
 
-import reminder from "../../assets/img/reminder-images.png";
-import reminderSmall from "../../assets/img/reminder-images-cut.png";
+import reminder from "../../assets/img/reminder/reminder-images.png";
+import rv1 from "../../assets/img/reminder/reminder-video-1.gif";
+import rv2 from "../../assets/img/reminder/reminder-video-2.gif";
+import rv3 from "../../assets/img/reminder/reminder-video-3.gif";
+
 import github from "../../assets/img/github-icon.svg";
 
 const Container = styled.div`
@@ -73,21 +78,24 @@ const Text = withReveal(
 
 const ImgContainer = withReveal(
   styled.div`
-    position: relative;
-    left: -4px;
-    /* top: -70px; */
-    /* width: 650px; */
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
     img {
-      width: 103%;
+      position: relative;
+      left: -13px;
+      width: 100%;
       transition: 0.5s ease;
+      margin-bottom: 28px;
     }
     img:hover {
       transform: scale(1.3);
     }
-
     @media (max-width: 834px) {
-      width: 90vw;
+      img {
+        width: 103%;
+        left: -4px;
+      }
       img:hover {
         transform: none;
       }
@@ -96,7 +104,87 @@ const ImgContainer = withReveal(
   <Fade bottom duration={2000} />
 );
 
+const Button = styled.button`
+  color: #2997ff;
+  background-color: transparent;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  border: 0;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: 0;
+  }
+  @media (max-width: 834px) {
+    position: relative;
+    float: left;
+  }
+`;
+
+const HiddenImages = styled.div`
+  margin-top: 32px;
+  background-color: #1a1a1a;
+  h1 {
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    margin: 24px 0 6px 0;
+  }
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
+`;
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="sm"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <div>
+        <Modal.Body style={{ backgroundColor: "#1a1a1a" }}>
+          <HiddenImages>
+            <h1>Mark as completed, Modify, Remove</h1>
+            <img src={rv1} alt="" />
+            <h1>Add a New Task</h1>
+            <img src={rv2} alt="" />
+            <h1>Add a New Category</h1>
+            <img src={rv3} alt="" />
+          </HiddenImages>
+        </Modal.Body>
+        <Modal.Footer
+          style={{
+            backgroundColor: "#1a1a1a",
+            border: "none",
+            borderRadius: "0px",
+          }}
+        >
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+        <div
+          style={{
+            height: "70px",
+            backgroundColor: "#1a1a1a",
+            borderBottomLeftRadius: "12px",
+            borderBottomRightRadius: "12px",
+          }}
+        ></div>
+      </div>
+    </Modal>
+  );
+}
+
 export default function RemindMeProject() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <Container lang="en">
       <Text className="order2">
@@ -116,10 +204,20 @@ export default function RemindMeProject() {
           <img src={github} alt="" />
         </a>
       </Text>
-      <ImgContainer className="order1">
+      <ImgContainer>
         <a href={reminder} target="_blank">
           <img src={reminder} alt="reminder" />
         </a>
+        <Button onClick={() => setModalShow(true)}>Show More</Button>
+        <MyVerticallyCenteredModal
+          style={{
+            border: "none",
+            borderRadius: "0px",
+            backgroundColor: "transparent",
+          }}
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
       </ImgContainer>
     </Container>
   );

@@ -4,7 +4,7 @@ import Slogans from "./components/Slogans";
 import Experience from "./components/Experience";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact";
-import Word from "./components/Word";
+// import Word from "./components/Word";
 import styled from "styled-components/macro";
 import "./App.css";
 

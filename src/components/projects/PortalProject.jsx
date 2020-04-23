@@ -105,7 +105,7 @@ const ImgContainer = withReveal(
       border-radius: 12px;
       box-shadow: 0px 5px 50px rgba(250, 254, 255, 0.25);
       width: 100%;
-      margin: 8px 0 22px 0;
+      margin: 88px 0 22px 0;
     }
     img:nth-child(1) {
       display: inline-flex;

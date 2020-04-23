@@ -181,7 +181,7 @@ export default class NavBar extends React.Component {
                 to="experience"
                 spy={true}
                 smooth="easeInOutCubic"
-                offset={150}
+                offset={-100}
                 duration={1000}
               >
                 experience
@@ -221,7 +221,7 @@ export default class NavBar extends React.Component {
                 to="experience"
                 spy={true}
                 smooth="easeInOutCubic"
-                offset={150}
+                offset={-100}
                 duration={1000}
               >
                 experience

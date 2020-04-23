@@ -104,7 +104,7 @@ const ImgContainer = withReveal(
       border-radius: 12px;
       box-shadow: 0px 5px 50px rgba(250, 254, 255, 0.25);
       width: 100%;
-      margin: 8px 0 22px 0;
+      margin: 74px 0 22px 0;
     }
     img:nth-child(1) {
       display: inline-flex;
@@ -145,14 +145,6 @@ const Button = styled.button`
     position: relative;
     float: left;
   }
-`;
-
-const Link = styled.a`
-  color: #2997ff;
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 17px;
-  display: block;
 `;
 
 function MyVerticallyCenteredModal(props) {

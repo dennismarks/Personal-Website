@@ -85,6 +85,7 @@ const ImgContainer = withReveal(
   styled.div`
     /* width: 750px; */
     height: auto;
+    margin-top: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -121,6 +122,7 @@ const ImgContainer = withReveal(
     }
     @media (max-width: 834px) {
       justify-content: space-around;
+      margin-top: 0;
       img {
         width: 46%;
         margin: 0px;
