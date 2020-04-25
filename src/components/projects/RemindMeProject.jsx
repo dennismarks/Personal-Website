@@ -17,12 +17,10 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 35% auto;
   grid-gap: 3%;
+
   @media (max-width: 834px) {
     grid-template-columns: 1fr;
-    .order2 {
-      grid-column-start: 1;
-      grid-row-start: 1;
-    }
+    grid-template-rows: auto auto;
   }
 `;
 
@@ -31,8 +29,6 @@ const Text = withReveal(
     font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    /* width: 400px; */
-    /* margin-right: 50px; */
     text-align: justify;
     h1 {
       font-weight: bold;
@@ -187,7 +183,7 @@ export default function RemindMeProject() {
 
   return (
     <Container lang="en">
-      <Text className="order2">
+      <Text>
         <h1>Remind Me</h1>
         <h3>
           Remind Me will help to keep track of all everyday life's to-do's. Use
@@ -200,12 +196,16 @@ export default function RemindMeProject() {
           Press and Hold to Reorder Cells, Popovers, Passing Data Using Using
           Delegation Pattern, Navigation Among Views
         </h3>
-        <a href="https://github.com/dennismarks/Reminders" target="_blank">
+        <a
+          href="https://github.com/dennismarks/Reminders"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={github} alt="" />
         </a>
       </Text>
-      <ImgContainer>
-        <a href={reminder} target="_blank">
+      <ImgContainer className="img">
+        <a href={reminder} target="_blank" rel="noopener noreferrer">
           <img src={reminder} alt="reminder" />
         </a>
         <Button onClick={() => setModalShow(true)}>Show More</Button>

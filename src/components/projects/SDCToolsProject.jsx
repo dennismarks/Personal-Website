@@ -243,7 +243,11 @@ export default function PortalProject() {
           <br />
           <i>Done in a group of 6.</i>
         </h3>
-        <a href="https://github.com/dennismarks/SDC-Tools" target="_blank">
+        <a
+          href="https://github.com/dennismarks/SDC-Tools"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={github} alt="" />
         </a>
       </Text>

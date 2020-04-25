@@ -41,6 +41,7 @@ const Main = styled.div`
   }
   h3 {
     margin-top: 6px;
+    margin-bottom: 0px;
     font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;

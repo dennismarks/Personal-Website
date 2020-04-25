@@ -163,6 +163,7 @@ export default function Project() {
         <a
           href="https://apps.apple.com/ca/app/u-of-t-mobile/id619483832"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={appstore} alt="" />
         </a>
@@ -175,7 +176,7 @@ export default function Project() {
         <img src={v1} alt="" />
         <img src={v2} alt="" />
 
-        {/* <a href={reminder} target="_blank">
+        {/* <a href={reminder} target="_blank" rel="noopener noreferrer">
           <img src={reminder} alt="reminder" />
         </a> */}
       </ImgContainer>

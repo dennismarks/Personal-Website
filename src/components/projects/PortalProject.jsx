@@ -148,14 +148,6 @@ const Button = styled.button`
   }
 `;
 
-const Link = styled.a`
-  color: #2997ff;
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 17px;
-  display: block;
-`;
-
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -213,7 +205,7 @@ export default function PortalProject() {
         <h1>Portal</h1>
         {/* <Link
           href="https://portal-course.herokuapp.com/"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           rel="noopener noreferrer"
         >
           Link
@@ -254,6 +246,7 @@ export default function PortalProject() {
         <a
           href="https://github.com/dennismarks/University-Portal"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={github} alt="" />
         </a>

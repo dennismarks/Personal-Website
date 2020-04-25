@@ -11,14 +11,11 @@ import github from "../../assets/img/github-icon.svg";
 
 const Container = styled.div`
   margin-top: 200px;
-  /* display: flex;
-  width: 1000px; */
   display: grid;
   grid-template-columns: 35% auto;
   grid-gap: 3%;
   @media (max-width: 834px) {
     grid-template-columns: 1fr;
-    /* flex-flow: column-reverse; */
   }
 `;
 
@@ -27,14 +24,11 @@ const Text = withReveal(
     font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    /* width: 400px; */
-    /* margin-right: 50px; */
     text-align: justify;
     h1 {
       font-weight: bold;
       font-size: 50px;
       display: inline;
-      /* background: -webkit-linear-gradient(-60deg, #ff7071 0%, #ff6aa0 100%); */
       background: -webkit-linear-gradient(-60deg, #fc00ff -40%, #00dbde 140%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -188,13 +182,17 @@ export default function Project() {
           Core Location, URL Session, JSON, JSON Decoder, UIView Animate,
           Storyboard and Programmatic Interface
         </h3>
-        <a href="https://github.com/dennismarks/Clima" target="_blank">
+        <a
+          href="https://github.com/dennismarks/Clima"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={github} alt="" />
         </a>
       </Text>
       <ImgContainer>
-        <a href={p} target="_blank">
-          <img src={p} />
+        <a href={p} target="_blank" rel="noopener noreferrer">
+          <img src={p} alt="" />
         </a>
         <Button onClick={() => setModalShow(true)}>Show More</Button>
         <MyVerticallyCenteredModal

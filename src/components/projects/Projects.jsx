@@ -37,8 +37,13 @@ const Title = withReveal(
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    /* iPhone X */
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      font-size: 85px;
+    }
+
     @media screen and (max-width: 330px) {
-      font-size: 73px;
+      font-size: 72px;
     }
   `,
   <Fade bottom duration={2000} />

@@ -6,18 +6,16 @@ import Fade from "react-reveal/Fade";
 import v1 from "../../assets/img/bpis/bpis-watch-video.gif";
 import v2 from "../../assets/img/bpis/bpis-ios-video.gif";
 import p1 from "../../assets/img/bpis/bpis-photo-1.png";
-import p2 from "../../assets/img/bpis/bpis-photo-2.png";
 import p3 from "../../assets/img/bpis/bpis-photo-3.png";
 
 import appstore from "../../assets/img/app-store-icon-2.svg";
 
 const Container = styled.div`
   margin-top: 200px;
-  /* display: flex;
-  width: 1200px; */
   display: grid;
   grid-template-columns: 35% auto;
   grid-gap: 3%;
+
   @media (max-width: 834px) {
     grid-template-columns: 1fr;
   }
@@ -28,8 +26,6 @@ const Text = withReveal(
     font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    /* width: 400px; */
-    /* margin-right: 50px; */
     text-align: justify;
     line-height: 1.3;
     h1 {
@@ -115,7 +111,6 @@ const ImgContainer = withReveal(
     }
     @media (max-width: 1230px) {
       img:nth-child(4) {
-        /* position: relative; */
         top: -180px;
         left: 15%;
       }
@@ -180,6 +175,7 @@ export default function Project() {
         <a
           href="https://apps.apple.com/ca/app/best-practice-in-surgery/id751595906"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={appstore} alt="" />
         </a>
@@ -190,7 +186,7 @@ export default function Project() {
         <img src={v2} alt="" />
         <img src={v1} alt="" />
 
-        {/* <a href={reminder} target="_blank">
+        {/* <a href={reminder} target="_blank" rel="noopener noreferrer">
           <img src={reminder} alt="reminder" />
         </a> */}
       </ImgContainer>

@@ -18,17 +18,12 @@ const Title = withReveal(
     font-weight: bold;
     font-size: 80px;
     background: -webkit-linear-gradient(-60deg, #ff5f6d, #ffc371);
-    /* background: -webkit-linear-gradient(-60deg, #5b86e5, #36d1dc); */
-    /* background: -webkit-linear-gradient(-60deg, #0071e3, #0e76a8); */
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     @media (max-width: 834px) {
       margin-top: 200px;
       font-size: 67px;
-    }
-    @media screen and (max-width: 330px) {
-      font-size: 73px;
     }
   `,
   <Fade bottom duration={2000} />
@@ -55,7 +50,6 @@ const Container = styled.div`
 const Icons = withReveal(
   styled.div`
     img {
-      /* margin-top: 20px; */
       margin-right: 20px;
       width: 45px;
       transition: 0.4s ease-in-out;
@@ -63,6 +57,7 @@ const Icons = withReveal(
     img:hover {
       transform: scale(1.06);
     }
+
     @media (max-width: 834px) {
       img:hover {
         transform: none;
@@ -104,12 +99,17 @@ export default function Contact() {
       <Title>Contact</Title>
       <Container lang="en" show={show}>
         <Icons>
-          <a href="https://github.com/dennismarks" target="_blank">
+          <a
+            href="https://github.com/dennismarks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={github} alt="" />
           </a>
           <a
             href="https://www.linkedin.com/in/dennismarkovchin/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={linkedin} alt="" />
           </a>

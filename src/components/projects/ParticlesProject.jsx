@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Modal from "react-bootstrap/Modal";
+import React from "react";
 
 import styled from "styled-components/macro";
 import withReveal from "react-reveal/withReveal";
 import Fade from "react-reveal/Fade";
 
 import main from "../../assets/img/particles.gif";
-
-import github from "../../assets/img/github-icon.svg";
 
 const Container = styled.div`
   margin-top: 125px;
@@ -16,24 +13,6 @@ const Container = styled.div`
   grid-gap: 3%;
   @media (max-width: 834px) {
     grid-template-columns: 1fr;
-  }
-`;
-
-const HiddenImages = styled.div`
-  margin-top: 32px;
-  background-color: #1a1a1a;
-  h1 {
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: white;
-    margin: 24px 0 6px 0;
-  }
-  img {
-    width: 100%;
-    border-radius: 12px;
   }
 `;
 

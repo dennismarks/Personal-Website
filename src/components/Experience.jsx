@@ -11,9 +11,7 @@ const GridContainer = withReveal(
     display: grid;
     grid-template-columns: 35% auto 50%;
     margin-top: 250px;
-    @media (max-width: 834px) {
-      grid-template-columns: 1fr;
-    }
+
     h3 {
       font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
@@ -25,10 +23,15 @@ const GridContainer = withReveal(
       margin-top: 12px;
       font-weight: bold;
       font-size: 18px;
+      text-align: justify;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
+    }
+
+    @media (max-width: 834px) {
+      grid-template-columns: 1fr;
     }
   `,
   <Fade bottom duration={2000} />
@@ -46,10 +49,14 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 834px) {
-    font-size: 62px;
+    font-size: 63px;
   }
   @media screen and (max-width: 330px) {
-    /* font-size: 73px; */
+    font-size: 56px;
+  }
+  /* iPhone X */
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    font-size: 66px;
   }
 `;
 

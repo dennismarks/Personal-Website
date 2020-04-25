@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 import withReveal from "react-reveal/withReveal";
 import Fade from "react-reveal/Fade";
@@ -49,7 +49,6 @@ const Text = withReveal(
     h4 {
       margin-top: 12px;
       font-size: 20px;
-      /* color: #888; */
     }
     h5 {
       font-style: italic;

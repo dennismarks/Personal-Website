@@ -51,9 +51,11 @@ const Main = styled.h1`
   text-transform: uppercase;
   background: ${(props) => {
     if (props.text === "Develop") {
-      return "-webkit-linear-gradient(-60deg, #fc00ff, #00dbde)";
-    } else if (props.text === "Design") {
+      // return "-webkit-linear-gradient(-60deg, #fc00ff, #00dbde)";
       return "-webkit-linear-gradient(-60deg, #43cea2, #2c75bf)";
+    } else if (props.text === "Design") {
+      return "-webkit-linear-gradient(-60deg, #fc00ff, #00dbde)";
+      // return "-webkit-linear-gradient(-60deg, #43cea2, #2c75bf)";
     }
   }};
   margin-bottom: ${(props) => {
@@ -90,9 +92,9 @@ const Main = styled.h1`
     font-weight: bolder;
     font-size: ${(props) => {
       if (props.text === "Design") {
-        return "20.7vw";
+        return "20.6vw";
       } else {
-        return "20.7vw";
+        return "20.6vw";
       }
     }};
   }
@@ -113,6 +115,7 @@ const Quate = styled.h1`
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+
   @media (max-width: 834px) {
     margin-top: 0px;
     font-size: 28px;

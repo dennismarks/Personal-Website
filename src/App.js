@@ -1,10 +1,11 @@
 import React from "react";
+
 import NavBar from "./components/NavBar";
 import Slogans from "./components/Slogans";
 import Experience from "./components/Experience";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact";
-// import Word from "./components/Word";
+
 import styled from "styled-components/macro";
 import "./App.css";
 
@@ -16,10 +17,6 @@ const Container = styled.div`
     width: 90vw;
     margin: 0 auto;
   }
-  /* @media (max-width: 834px) {
-    width: 90vw;
-    margin: 0 auto; 
-  } */
 `;
 
 const BluredHeader = styled.div`
@@ -29,8 +26,6 @@ const BluredHeader = styled.div`
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.01);
-  /* backdrop-filter: blur(100px); */
-  /* background: rgba(0, 0, 0, 0.4); */
   backdrop-filter: blur(100px);
   display: block;
   @media (max-width: 1230px) {
@@ -51,7 +46,6 @@ function App() {
   return (
     <React.Fragment>
       <BluredHeader></BluredHeader>
-      {/* <Word></Word> */}
       <Container>
         <NavBar></NavBar>
         <Slogans></Slogans>
