@@ -26,9 +26,9 @@ const Container = styled.div`
 
 const Text = withReveal(
   styled.div`
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: justify;
     h1 {
       font-weight: bold;
@@ -123,9 +123,9 @@ const HiddenImages = styled.div`
   margin-top: 32px;
   background-color: #1a1a1a;
   h1 {
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: white;

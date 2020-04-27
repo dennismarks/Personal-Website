@@ -36,14 +36,15 @@ const FadeIn = keyframes`
 const Main = styled.h1`
   z-index: -1;
   position: relative;
-  margin-left: -12px;
+  margin-left: -14px;
   margin-top: 40px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue";
   font-style: normal;
   font-weight: bold;
   font-size: ${(props) => {
     if (props.text === "Develop") {
-      return "276px";
+      return "275px";
     } else if (props.text === "Design") {
       return "272px";
     }
@@ -60,7 +61,7 @@ const Main = styled.h1`
   }};
   margin-bottom: ${(props) => {
     if (props.text === "Develop") {
-      return "-5px";
+      return "-4px";
     }
   }};
   -webkit-background-clip: text;
@@ -104,7 +105,8 @@ const Quate = styled.h1`
   z-index: -9999;
   width: 430px;
   margin-top: 50px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue";
   font-weight: bold;
   font-size: 42px;
   color: #f3f3f3;

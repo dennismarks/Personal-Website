@@ -18,9 +18,9 @@ const GridContainer = withReveal(
 const Main = styled.div`
   max-width: 400px;
   h1 {
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
@@ -28,9 +28,9 @@ const Main = styled.div`
     margin-top: 6px;
   }
   h2 {
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -65,7 +65,7 @@ const Info = styled.div`
   hyphens: auto;
   h1,
   h2 {
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     color: #aaa;

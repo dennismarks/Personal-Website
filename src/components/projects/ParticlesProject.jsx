@@ -18,9 +18,9 @@ const Container = styled.div`
 
 const Text = withReveal(
   styled.div`
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: justify;
     line-height: 1.3;
     h1 {

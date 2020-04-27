@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import NavBar from "./components/NavBar";
 import Slogans from "./components/Slogans";
@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 
 import styled from "styled-components/macro";
 import "./App.css";
+import "./index.css";
 
 const Container = styled.div`
   width: 1200px;
@@ -17,6 +18,57 @@ const Container = styled.div`
     width: 90vw;
     margin: 0 auto;
   }
+`;
+
+const LoaderContainer = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+  }
+  h2 {
+    font-family: "SF Pro Text";
+    font-weight: normal;
+    opacity: 0;
+    position: absolute;
+  }
+  h3 {
+    font-family: "SF Pro Text";
+    font-weight: medium;
+    opacity: 0;
+    position: absolute;
+  }
+  h4 {
+    font-family: "SF Pro Text";
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+  }
+`;
+
+const Loader = styled.div`
+  margin: 100px auto;
+  font-size: 25px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load5 1.1s infinite ease;
+  animation: load5 1.1s infinite ease;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
 `;
 
 const BluredHeader = styled.div`
@@ -43,20 +95,43 @@ const Footer = styled.div`
 `;
 
 function App() {
-  return (
-    <React.Fragment>
-      <BluredHeader></BluredHeader>
-      <Container>
-        <NavBar></NavBar>
-        <Slogans></Slogans>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Contact></Contact>
-        <div style={{ height: "150px" }}></div>
-      </Container>
-      <Footer>Copyright © 2020 Dennis Markovchin. All right reserved.</Footer>
-    </React.Fragment>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (loading) {
+        setLoading(false);
+      }
+    }, 2000);
+  });
+
+  if (loading) {
+    return (
+      <LoaderContainer>
+        <Loader></Loader>
+        <h1>SF Pro Display</h1>
+        <h2>SF Pro Text Normal</h2>
+        <h3>SF Pro Text Medium</h3>
+        <h4>SF Pro Text Bold</h4>
+        //{" "}
+      </LoaderContainer>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <BluredHeader></BluredHeader>
+        <Container>
+          <NavBar></NavBar>
+          <Slogans></Slogans>
+          <Experience></Experience>
+          <Projects></Projects>
+          <Contact></Contact>
+          <div style={{ height: "150px" }}></div>
+        </Container>
+        <Footer>Copyright © 2020 Dennis Markovchin. All right reserved.</Footer>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

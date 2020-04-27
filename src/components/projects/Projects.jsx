@@ -16,9 +16,9 @@ import FileSystem from "./FileSystem";
 const Title = withReveal(
   styled.h1`
     margin-top: 250px;
-    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 80px;
     /* background: -webkit-linear-gradient(-60deg, #fc00ff -20%, #00dbde 100%); */
