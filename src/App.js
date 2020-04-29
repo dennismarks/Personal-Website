@@ -79,9 +79,13 @@ const BluredHeader = styled.div`
   top: 0;
   background: rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   display: block;
   @media (max-width: 1230px) {
     height: 36px;
+  }
+  @supports (-moz-appearance: none) {
+    background: rgba(0, 0, 0, 0.9);
   }
 `;
 
