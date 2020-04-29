@@ -50,6 +50,7 @@ const Text = withReveal(
     h1 {
       font-weight: bold;
       font-size: 54px;
+      margin-left: -2px;
       display: inline-block;
       background: -webkit-linear-gradient(-60deg, #ff758c 20%, #ff7eb3 70%);
       -webkit-background-clip: text;

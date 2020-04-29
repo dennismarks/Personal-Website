@@ -35,8 +35,7 @@ const Container = styled.div`
   flex-direction: column;
   h3 {
     color: #aaa;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 15px;
     -webkit-hyphens: auto;

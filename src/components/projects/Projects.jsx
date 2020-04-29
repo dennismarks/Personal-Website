@@ -15,6 +15,7 @@ import FileSystem from "./FileSystem";
 
 const Title = withReveal(
   styled.h1`
+    margin-left: -3px;
     margin-top: 250px;
     font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
       "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -40,6 +41,11 @@ const Title = withReveal(
     /* iPhone X */
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
       font-size: 85px;
+    }
+
+    /* iPhone 6/7/8 */
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+      font-size: 84px;
     }
 
     @media screen and (max-width: 330px) {

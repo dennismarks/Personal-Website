@@ -66,8 +66,8 @@ const Main = styled.h1`
   }};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: ${FadeInMove} 7s ease-in-out both;
-  -webkit-animation: ${FadeInMove} 7s ease-in-out both;
+  animation: ${FadeInMove} 6s ease-in-out both;
+  -webkit-animation: ${FadeInMove} 6s ease-in-out both;
 
   @media (max-width: 1230px) {
     margin-left: -8px;
@@ -121,7 +121,7 @@ const Quate = styled.h1`
   @media (max-width: 834px) {
     margin-top: 0px;
     font-size: 28px;
-    width: 230px;
+    width: 230.11px;
     text-align: start;
     hyphens: none;
   }
@@ -133,7 +133,7 @@ export default function Slogans() {
   useEffect(() => {
     setTimeout(() => {
       if (text === "Design") setText("Develop");
-    }, 4888);
+    }, 4000);
   });
 
   return (

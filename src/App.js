@@ -102,7 +102,7 @@ function App() {
       if (loading) {
         setLoading(false);
       }
-    }, 2000);
+    }, 1500);
   });
 
   if (loading) {
@@ -113,7 +113,6 @@ function App() {
         <h2>SF Pro Text Normal</h2>
         <h3>SF Pro Text Medium</h3>
         <h4>SF Pro Text Bold</h4>
-        //{" "}
       </LoaderContainer>
     );
   } else {

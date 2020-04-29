@@ -32,7 +32,8 @@ const Text = withReveal(
     line-height: 1.3;
     h1 {
       font-weight: bold;
-      font-size: 48px;
+      font-size: 51px;
+      margin-left: -2px;
       display: inline-block;
       /* background: -webkit-linear-gradient(-60deg, #fc00ff -20%, #00dbde 90%); */
       /* background: -webkit-linear-gradient(-60deg, #f77062 20%, #fe5196 70%); */
@@ -160,13 +161,13 @@ export default function Project() {
           The app was fully designed and implemented by me. Except the initial
           database set up.
         </h3>
-        <a
+        {/* <a
           href="https://apps.apple.com/ca/app/u-of-t-mobile/id619483832"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={appstore} alt="" />
-        </a>
+        </a> */}
       </Text>
       <ImgContainer>
         <img src={p1} alt="" />

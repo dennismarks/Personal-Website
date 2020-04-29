@@ -51,6 +51,7 @@ const Text = withReveal(
       font-size: 20px;
     }
     h5 {
+      font-size: 16px;
       font-style: italic;
     }
     img {
@@ -63,7 +64,8 @@ const Text = withReveal(
       margin-top: 30px;
     }
     @media screen and (max-width: 330px) {
-      h3 {
+      h3,
+      h5 {
         font-size: 16px;
       }
     }
@@ -131,6 +133,7 @@ export default function ImageProcessing() {
         </h3>
         <br />
         <h5>Distribution of the code is upon request by employer only.</h5>
+        <br />
       </Text>
       <ImgContainer>
         <img src={main} alt="" />

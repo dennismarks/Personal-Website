@@ -86,6 +86,11 @@ const Links = styled.div`
       animation-delay: 2.6s;
       margin-right: 0;
     }
+    @media (max-width: 720px) {
+      &:hover {
+        color: #aaa;
+      }
+    }
   }
 `;
 
@@ -125,9 +130,10 @@ export default class NavBar extends React.Component {
         } else if (window.scrollY >= 85) {
           this.setState({ sticky: true });
           this.h1Ref.current.innerHTML = "dm";
+          this.h1Ref.current.style.marginTop = "1px";
           this.ulRef.current.style.float = "right";
           this.ulRef.current.style.position = "relative";
-          this.ulRef.current.style.bottom = "41px";
+          this.ulRef.current.style.bottom = "42.5px";
         }
       } else if (window.innerWidth <= 1230) {
         if (window.scrollY < 70) {
@@ -157,7 +163,7 @@ export default class NavBar extends React.Component {
         } else if (window.scrollY >= 70) {
           this.h1Ref.current.innerHTML = "DENNIS MARKOVCHIN";
           this.ulRef.current.style.position = "absolute";
-          this.ulRef.current.style.marginLeft = "964px";
+          this.ulRef.current.style.marginLeft = "970px";
           this.ulRef.current.style.bottom = "35px";
           this.ulRef.current.style.transition =
             "bottom 0.3s linear, margin-left 0.3s linear, position 0.3s linear";

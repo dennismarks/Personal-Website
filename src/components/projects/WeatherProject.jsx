@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 
 import p from "../../assets/img/weather/weather-images.png";
 import p3 from "../../assets/img/weather/weather-3.gif";
+
 import github from "../../assets/img/github-icon.svg";
 
 const Container = styled.div`
@@ -27,7 +28,7 @@ const Text = withReveal(
     text-align: justify;
     h1 {
       font-weight: bold;
-      font-size: 50px;
+      font-size: 54px;
       display: inline;
       background: -webkit-linear-gradient(-60deg, #fc00ff -40%, #00dbde 140%);
       -webkit-background-clip: text;
@@ -82,6 +83,7 @@ const ImgContainer = withReveal(
       transform: scale(1.3);
     }
     @media (max-width: 834px) {
+      margin-top: 20px;
       img {
         width: 100%;
       }
@@ -127,6 +129,7 @@ const HiddenImages = styled.div`
   img {
     width: 100%;
     border-radius: 12px;
+    margin-bottom: 16px;
   }
 `;
 

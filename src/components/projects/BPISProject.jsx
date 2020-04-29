@@ -31,7 +31,8 @@ const Text = withReveal(
     h1 {
       text-align: left;
       font-weight: bold;
-      font-size: 48px;
+      font-size: 52px;
+      margin-left: -2px;
       display: inline-block;
       /* background: -webkit-linear-gradient(-60deg, #fc00ff -20%, #00dbde 90%); */
       /* background: -webkit-linear-gradient(-60deg, #f77062 20%, #fe5196 70%); */

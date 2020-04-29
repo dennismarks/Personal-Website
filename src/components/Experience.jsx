@@ -55,9 +55,21 @@ const Title = styled.h1`
   @media screen and (max-width: 330px) {
     font-size: 56px;
   }
-  /* iPhone X */
+  /* iPhone XS Max */
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    font-size: 72px;
+  }
+  /* iPhone XR */
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    font-size: 72px;
+  }
+  /* iPhone Xs */
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     font-size: 66px;
+  }
+  /* iPhone 6/7/8 */
+  @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    font-size: 65px;
   }
 `;
 
