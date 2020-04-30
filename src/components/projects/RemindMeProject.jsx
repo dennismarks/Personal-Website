@@ -86,7 +86,7 @@ const ImgContainer = withReveal(
       margin-bottom: 28px;
     }
     img:hover {
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
     @media (max-width: 834px) {
       img {
