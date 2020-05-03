@@ -125,7 +125,7 @@ export default function ImageProcessing() {
         <h3>C, Pthreads, SciNet</h3>
         <h2>My Role</h2>
         <h3>
-          Wrote a data parallel implementation using Pthreads. Where each thread
+          Wrote a data-parallel implementation using Pthreads. Where each thread
           is assigned a chunk of the data to process.
           <br />
           <br />

@@ -220,12 +220,12 @@ export default function PortalProject() {
           <br />
           - ability to choose the form and patient to conduct your diagnosis
           <br />
-          - upload the SDC form in XML type to be saved in database to be used
-          instantly and available for everyone else
+          - upload the SDC form in XML type to be saved in the database to be
+          used instantly and available for everyone else
           <br />
           - XML to JSON parser
           <br />
-          - save modified form for future references
+          - save the modified form for future references
           <br />- access a previously saved form
         </h3>
         <h2>Specs</h2>
@@ -237,8 +237,8 @@ export default function PortalProject() {
           Front End lead.
           <br />
           <br />
-          App was fully designed by me using Figma app. Components were build
-          with css using React Styled Components library. <br />
+          The app was fully designed by me using Figma app. Components were
+          built with css using React Styled Components library. <br />
           Initial project set up and Patient CRUD endpoints.
           <br />
           <br />

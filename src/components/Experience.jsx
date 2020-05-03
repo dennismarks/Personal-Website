@@ -80,7 +80,7 @@ export default function Experience() {
         <Title id="experience">Experience</Title>
         <div></div>
         <h3>
-          Currently on 16 month PEY and will be beginning the 4th year of
+          Currently on 16 month internship and will be beginning the 4th year of
           Computer Science at the University of Toronto in September 2021.
         </h3>
       </GridContainer>
