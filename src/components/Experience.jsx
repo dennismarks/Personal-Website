@@ -80,8 +80,10 @@ export default function Experience() {
         <Title id="experience">Experience</Title>
         <div></div>
         <h3>
-          Currently on 16 month internship and will be beginning the 4th year of
-          Computer Science at the University of Toronto in September 2021.
+          Currently on a 16-month internship as a Software Developer at Forma
+          AI. Programming teacher to high-school and entry-level university
+          students. Will be beginning the 4th year of Computer Science at the
+          University of Toronto in September 2021. Visual addict.
         </h3>
       </GridContainer>
       {json.positions.map((p, index) => (
