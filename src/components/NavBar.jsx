@@ -67,7 +67,7 @@ const Links = styled.div`
     font-weight: normal;
     font-size: 15px;
     color: #aaa;
-    margin: 0 9px;
+    margin: 0 9.2px;
     transition: 0.5s;
     animation: ${FadeIn} 3s ease-in-out both;
     -webkit-animation: ${FadeIn} 3s ease-in-out both;
