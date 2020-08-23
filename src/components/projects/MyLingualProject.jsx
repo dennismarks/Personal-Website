@@ -9,7 +9,6 @@ import p1 from "../../assets/img/my-lingual/mylingual-photo-1.PNG";
 import p2 from "../../assets/img/my-lingual/mylingual-photo-2.PNG";
 import p3 from "../../assets/img/my-lingual/mylingual-photo-3.PNG";
 import p4 from "../../assets/img/my-lingual/mylingual-photo-4.PNG";
-import appstore from "../../assets/img/app-store-icon-2.svg";
 
 const Container = styled.div`
   margin-top: 125px;
