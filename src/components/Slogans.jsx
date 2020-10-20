@@ -133,7 +133,7 @@ export default function Slogans() {
   useEffect(() => {
     setTimeout(() => {
       if (text === "Design") setText("Develop");
-    }, 4000);
+    }, 3650);
   });
 
   return (
