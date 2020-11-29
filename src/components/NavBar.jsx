@@ -63,7 +63,7 @@ const Links = styled.div`
   }
   .link {
     text-decoration: none;
-    font-family: "SF Pro Text";
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue";
     font-weight: normal;
     font-size: 15px;
     color: #aaa;
@@ -120,53 +120,52 @@ export default class NavBar extends React.Component {
   };
 
   listenScrollEvent = () => {
+    const ulRefStyle = this.ulRef.current.style;
     if (this.state.animate) {
       if (window.innerWidth <= 720) {
         if (window.scrollY < 25) {
           this.setState({ sticky: false });
-          this.ulRef.current.style.position = "normal";
-          this.ulRef.current.style.marginLeft = "0px";
-          this.ulRef.current.style.bottom = "0";
+          ulRefStyle.position = "normal";
+          ulRefStyle.marginLeft = "0px";
+          ulRefStyle.bottom = "0";
         } else if (window.scrollY >= 85) {
           this.setState({ sticky: true });
           this.h1Ref.current.innerHTML = "dm";
           this.h1Ref.current.style.marginTop = "1px";
-          this.ulRef.current.style.float = "right";
-          this.ulRef.current.style.position = "relative";
-          this.ulRef.current.style.bottom = "42.5px";
+          ulRefStyle.float = "right";
+          ulRefStyle.position = "relative";
+          ulRefStyle.bottom = "42.5px";
         }
       } else if (window.innerWidth <= 1230) {
         if (window.scrollY < 70) {
           this.setState({ sticky: false });
           this.h1Ref.current.innerHTML = "DENNIS MARKOVCHIN";
-          this.ulRef.current.style.position = "normal";
-          this.ulRef.current.style.marginLeft = "0px";
-          this.ulRef.current.style.bottom = "0";
+          ulRefStyle.position = "normal";
+          ulRefStyle.marginLeft = "0px";
+          ulRefStyle.bottom = "0";
           window.removeEventListener("scroll", this.listenScrollEvent);
         } else if (window.scrollY >= 70) {
           this.h1Ref.current.innerHTML = "DENNIS MARKOVCHIN";
-          this.ulRef.current.style.float = "right";
-          this.ulRef.current.style.position = "relative";
-          this.ulRef.current.style.bottom = "41px";
+          ulRefStyle.float = "right";
+          ulRefStyle.position = "relative";
+          ulRefStyle.bottom = "41px";
           window.removeEventListener("scroll", this.listenScrollEvent);
           this.setState({ sticky: true });
         }
       } else {
+        ulRefStyle.transition = "0.3s linear";
         if (window.scrollY < 70) {
           this.setState({ sticky: false });
           this.h1Ref.current.innerHTML = "DENNIS MARKOVCHIN";
-          this.ulRef.current.style.position = "normal";
-          this.ulRef.current.style.marginLeft = "0px";
-          this.ulRef.current.style.bottom = "0";
-          this.ulRef.current.style.transition = "";
+          ulRefStyle.position = "normal";
+          ulRefStyle.marginLeft = "0px";
+          ulRefStyle.bottom = "0px";
           window.removeEventListener("scroll", this.listenScrollEvent);
         } else if (window.scrollY >= 70) {
           this.h1Ref.current.innerHTML = "DENNIS MARKOVCHIN";
-          this.ulRef.current.style.position = "absolute";
-          this.ulRef.current.style.marginLeft = "970px";
-          this.ulRef.current.style.bottom = "35px";
-          this.ulRef.current.style.transition =
-            "bottom 0.3s linear, margin-left 0.3s linear, position 0.3s linear";
+          ulRefStyle.position = "absolute";
+          ulRefStyle.marginLeft = "970px";
+          ulRefStyle.bottom = "35px";
           window.removeEventListener("scroll", this.listenScrollEvent);
           this.setState({ sticky: true });
         }

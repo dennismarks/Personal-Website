@@ -206,7 +206,7 @@ export default function RemindMeProject() {
         </a>
       </Text>
       <ImgContainer className="img">
-        <a href={reminder} target="_blank" rel="noopener noreferrer">
+        <a>
           <img src={reminder} alt="reminder" />
         </a>
         <Button onClick={() => setModalShow(true)}>Show More</Button>

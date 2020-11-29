@@ -74,9 +74,11 @@ const Button = styled.button`
   border-radius: 22px;
   background-color: #0071e3;
   border: 0;
+  transition: 0.4s ease-in-out;
   &:hover {
     background-color: rgb(10, 120, 218);
     cursor: pointer;
+    transform: scale(1.03);
   }
   a {
     text-decoration: none;

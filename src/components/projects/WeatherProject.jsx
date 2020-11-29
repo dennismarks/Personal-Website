@@ -194,9 +194,7 @@ export default function Project() {
         </a>
       </Text>
       <ImgContainer>
-        <a href={p} target="_blank" rel="noopener noreferrer">
-          <img src={p} alt="" />
-        </a>
+        <img src={p} alt="" />
         <Button onClick={() => setModalShow(true)}>Show More</Button>
         <MyVerticallyCenteredModal
           style={{

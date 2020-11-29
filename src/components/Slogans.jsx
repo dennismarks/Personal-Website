@@ -55,7 +55,7 @@ const Main = styled.h1`
       // return "-webkit-linear-gradient(-60deg, #fc00ff, #00dbde)";
       return "-webkit-linear-gradient(-60deg, #43cea2, #2c75bf)";
     } else if (props.text === "Design") {
-      return "-webkit-linear-gradient(-60deg, #fc00ff, #00dbde)";
+      return "-webkit-linear-gradient(-60deg, #fd33ff, #00dbde)";
       // return "-webkit-linear-gradient(-60deg, #43cea2, #2c75bf)";
     }
   }};
