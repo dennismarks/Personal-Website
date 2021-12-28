@@ -131,7 +131,7 @@ function App() {
           <Contact></Contact>
           <div style={{ height: "150px" }}></div>
         </Container>
-        <Footer>Copyright © 2021 Dennis Markovchin. All right reserved.</Footer>
+        <Footer>Copyright © {new Date().getFullYear()} Dennis Markovchin. All right reserved.</Footer>
       </React.Fragment>
     );
   }
