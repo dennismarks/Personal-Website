@@ -10,6 +10,7 @@ import BPISProject from "./BPISProject";
 import PortalProject from "./PortalProject";
 import SDCToolsProject from "./SDCToolsProject";
 import ParticlesProject from "./ParticlesProject";
+import PacmanProject from "./PacmanProject";
 import ImageProcessing from "./ImageProcessing";
 import FileSystem from "./FileSystem";
 
@@ -76,6 +77,7 @@ export default function Projects() {
         <ParticlesProject></ParticlesProject>
         <ImageProcessing></ImageProcessing>
         <FileSystem></FileSystem>
+        <PacmanProject></PacmanProject>
       </GridContainer>
     </React.Fragment>
   );
