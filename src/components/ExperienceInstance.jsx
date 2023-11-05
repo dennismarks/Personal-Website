@@ -48,6 +48,7 @@ const Main = styled.div`
     font-weight: medium;
     font-size: 17px;
     color: #888;
+    white-space: pre;
   }
   @media (max-width: 834px) {
     h1,

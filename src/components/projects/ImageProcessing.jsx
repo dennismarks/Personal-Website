@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 import main from "../../assets/img/image-processing.PNG";
 
 const Container = styled.div`
+  width: 100%;
   margin-top: 125px;
   display: grid;
   grid-template-columns: 35% auto;
